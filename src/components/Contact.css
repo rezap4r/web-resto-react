@@ -1,0 +1,152 @@
+* {
+  font-family: 'Lato', sans-serif;
+}
+
+.contact-container {
+  height: 55vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.contact-wrapper {
+  width: 600px;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 40px;
+  border-radius: 10px;
+  background-color: #263238;
+}
+
+form {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+h2 {
+  text-align: center;
+  width: 100%;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+label {
+  font-size: 0.8em;
+  margin-bottom: 0.25em;
+  color: #fff;
+  font-weight: lighter;
+}
+
+input {
+  padding: 10px 10px;
+  border-radius: 5px;
+  outline: none;
+  border: 1px solid #cfcfcf;
+}
+
+input::placeholder {
+  font-size: 1.2em;
+  font-weight: lighter;
+  color: #999;
+}
+
+.icons {
+  padding-right: 1px;
+}
+.fullName {
+  margin-right: 1%;
+}
+
+.emailAddress {
+  width: 66%;
+}
+
+.message {
+  width: 100%;
+}
+
+.fullName,
+.emailAddress,
+.message {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+.createAccount {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.createAccount button {
+  padding: 10px 15px;
+  margin-top: 1em;
+  margin-bottom: 0.25em;
+  width: 100%;
+  background-color: #ffa502;
+  color: #ffff;
+  letter-spacing: 1px;
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+}
+
+.createAccount button:hover {
+  background-color: #e85d04;
+}
+
+@media screen and (max-width: 1024px) {
+  .contact-container {
+    width: 80%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .contact-wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #263238;
+  }
+}
+
+@media screen and (max-width: 820px) {
+  .contact-container {
+    width: 95%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px auto;
+  }
+
+  .contact-wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #263238;
+  }
+
+  .fullName {
+    width: 100%;
+  }
+
+  .emailAddress {
+    width: 100%;
+  }
+}
